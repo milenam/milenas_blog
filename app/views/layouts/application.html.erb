@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Milena's Blog</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="container">
+	<ul class="nav nav-pills col-md-12">
+<li>
+<a href="/">Home</a>
+</li>
+<li>
+<a href="/about">About</a>
+</li>
+<li>
+<a href="/posts/new">Create New Post</a>
+</li>
+</ul><%= yield %></div>
+
+</body>
+</html>
